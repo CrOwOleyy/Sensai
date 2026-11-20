@@ -1,0 +1,20 @@
+{
+  "title": "Spell",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "incantation": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": ["Charm", "Transfiguration", "Curse", "Jinx", "Hex", "Healing", "Counter-Spell"]
+    },
+    "effect": { "type": "string" },
+    "difficulty": {
+      "type": "string",
+      "enum": ["Standard", "OWL level", "NEWT level"]
+    }
+  },
+  "required": ["name", "incantation", "type", "effect"],
+  "additionalProperties": false
+}
+

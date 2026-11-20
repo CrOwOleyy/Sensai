@@ -1,0 +1,21 @@
+{
+  "title": "Potion",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "effect": { "type": "string" },
+    "difficulty": {
+      "type": "string",
+      "enum": ["Beginner", "Intermediate", "Advanced"]
+    },
+    "ingredients": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "brewing_time_minutes": { "type": "integer" },
+    "danger_warning": { "type": "string" }
+  },
+  "required": ["name", "effect", "difficulty", "ingredients", "brewing_time_minutes"],
+  "additionalProperties": false
+}
+

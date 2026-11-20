@@ -1,0 +1,7 @@
+{
+  "model": "llama3.2",
+  "ollama_url": "http://127.0.0.1:11434",
+  "persona": "dumbledore",
+  "temperature": 0.8,
+  "num_ctx": 4096
+}
